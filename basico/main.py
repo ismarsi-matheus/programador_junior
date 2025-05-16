@@ -10,7 +10,7 @@
 # is_python = True
 # is_java = False
 
-# #armazenamento condições 
+# #armazenamento condições
 
 # ingressos=50
 # compradores=250
@@ -76,7 +76,7 @@
 #     print("programador sênior")
 # else:
 #     print("gerente de projetos")
-    
+
 # elif=else if
 
 # lista_numeros=[1,2,3,4,5,6,7,8,9,10]
@@ -116,7 +116,7 @@
 
 # while:loop que repete um bloco de código enquanto uma condição for verdadeira
 
-nota=[]
+nota = []
 
 # codigo_aluno=input("RM:")
 # nota=float(input("Nota:"))
@@ -139,8 +139,8 @@ nota=[]
 #     codigo_aluno=n[0]
 #     nota=n[1]
 #     print("0 RM",codigo_aluno,"tirou a nota",nota)
-    
-    
+
+
 # notas=[
 # 0=>[1234,10]    <=rm,nota
 # 1=>[321,5.5]
@@ -156,17 +156,17 @@ nota=[]
 #     nota=float(input("Nota:"))
 #     resultado=[codigo_aluno,nota]
 #     nota.append(resultado)
-    
+
 #     # alternativa:conatdor+=1
 #     contador=contador+1
-    
+
 #     print ("quantidade de notas",len(nota))
 
 
-pessoa={
-    "nome":"Matheus",
-    "idade":18,
-    "peso":88.8
+pessoa = {
+    "nome": "Matheus",
+    "idade": 18,
+    "peso": 88.8
 }
 
 print(pessoa["nome"])
@@ -174,26 +174,25 @@ print(pessoa["idade"])
 print(pessoa["peso"])
 # dicionário:estrutura de dados que armazena pares de chave-valor
 
-# informações do jogador 
+# informações do jogador
 
-player={
-    "nome":"Matheus",
-    "level":1,
-    "hp":100,
-    "exp":0,
-    "dano":5,
+player = {
+    "nome": "Matheus",
+    "level": 1,
+    "hp": 100,
+    "exp": 0,
+    "dano": 5,
 }
 
 # lista de inimigos
 
-npcs=[
-    {"nome":"monstrinho","dano":2,"hp":50,"exp":5},
-    {"nome":"monstro","dano":5,"hp":100,"exp":10},
-    {"nome":"monstrão","dano":10,"hp":150,"exp":15},
-    {"nome":"Chefão","dano":25,"hp":200,"exp":20},
+npcs = [
+    {"nome": "monstrinho", "dano": 2, "hp": 50, "exp": 5},
+    {"nome": "monstro", "dano": 5, "hp": 100, "exp": 10},
+    {"nome": "monstrão", "dano": 10, "hp": 150, "exp": 15},
+    {"nome": "Chefão", "dano": 25, "hp": 200, "exp": 20},
 ]
 
 # dicionario:estrutura de dados que armazena pares de chave-valor
 
 # lista:estrutura de dados que armazena uma sequência de valores
-

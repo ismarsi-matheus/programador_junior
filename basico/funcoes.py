@@ -7,9 +7,9 @@
 #     valor2=int(input("Valor 2: "))
 #     resposta =minha_funcao(valor1,valor2)
 #     print(valor1,"+",valor2,"=",resposta)
-    
-    
-# codigo sem funcao 
+
+
+# codigo sem funcao
 
 # fluxo_caixa=[]
 
@@ -23,7 +23,7 @@
 
 # while True:
 #     opcao= int(input("digite a opcao:"))
-    
+
 #     if opcao ==1:
 #         nome=input("Nome da receita: ")
 #         valor=float(input("Valor da receita: "))
@@ -40,15 +40,14 @@
 #         })
 #     else:
 #         break
-    
+
 #     # nota fiscal
 #     total=0
 #     for fc in fluxo_caixa:
 #        print("Nome:",fc['nome'],", valor:",fc['valor'])
-#     total=total+fc['valor'] 
-    
-#     print("Saldo Atual R$:",total)
+#     total=total+fc['valor']
 
+#     print("Saldo Atual R$:",total)
 
 
 fluxo_caixa = []
@@ -60,6 +59,7 @@ print("1 - Adicionar receita")
 print("2 - Adicionar despesa")
 print("\n# Digite outro número para encerrar #\n")
 
+
 def adicionar_transacao(tipo):
     nome = input(f"Nome da {tipo}: ")
     valor = float(input(f"Valor da {tipo}: "))
@@ -68,6 +68,7 @@ def adicionar_transacao(tipo):
         "valor": valor,
         "tipo": tipo
     })
+
 
 while True:
     opcao = int(input("Digite a opção: "))
@@ -85,7 +86,8 @@ while True:
 
     print("\n--- Histórico de transações ---")
     for fc in fluxo_caixa:
-        print(f"Tipo: {fc['tipo']} - Nome: {fc['nome']} - Valor: R$ {fc['valor']:.2f}")
+        print(
+            f"Tipo: {fc['tipo']} - Nome: {fc['nome']} - Valor: R$ {fc['valor']:.2f}")
         if fc['tipo'] == 'receita':
             total_receitas += fc['valor']
         elif fc['tipo'] == 'despesa':
@@ -96,4 +98,3 @@ while True:
     print("\nTotal de Receitas: R$ {:.2f}".format(total_receitas))
     print("Total de Despesas: R$ {:.2f}".format(total_despesas))
     print("Saldo Final: R$ {:.2f}\n".format(saldo))
-

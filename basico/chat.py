@@ -3,30 +3,27 @@ import os
 
 mensagens = []
 
-nome= input("Nome: ")
+nome = input("Nome: ")
 
 while True:
     # limpamdo terminal
     os.system('cls')
-    
-    if len(mensagens)>0:
+
+    if len(mensagens) > 0:
         for m in mensagens:
-            print(m['nome'],"-",m['texto'])
-            
+            print(m['nome'], "-", m['texto'])
+
 # se alista for maior que 0, imprime as mensagens
 
     print("----------------------")
-    
+
     # obtendo o texto
-    
+
     texto = input("Digite sua mensagem: ")
-    if texto =="fim":
+    if texto == "fim":
         break
     # adicionando a mensagem na lista
     mensagens.append({
-        "nome": nome, 
+        "nome": nome,
         "texto": texto
-        })
-    
-    
-    
+    })
